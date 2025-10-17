@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <main>
-      <div id="caixaNovaFuncionalidade" class="caixa">
-        <div id="caixaNovoCurso" class="caixaFunciondalides">
-          <label for="">Nome do curso</label>
-          <input type="text" name="nomeDoCurso" id="nomeDoCurso" />
-          <button id="btnAdicionarNovoCurso">Adicionar</button>
-        </div>
-        <div id="caixaRemoverCurso" class="caixaFunciondalides">
-          <button id="btnRemoverCurso">Remover Selecionado</button>
-        </div>
-        <div id="CaixaCursoSelecionado" class="caixaFunciondalides">
-          <button id="btnCursoSelecionado">Curso selecionado</button>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="aula43.css">
+</head>
+
+<body>
+  <main>
+    <div id="caixaNovaFuncionalidade" class="caixa">
+      <div id="caixaNovoCurso" class="caixaFuncionalidades">
+        <label for="">Nome do curso</label>
+        <input type="text" name="nomeCurso" id="nomeCurso" />
+        <button id="btnAdicionarNovoCurso">Adicionar</button>
       </div>
-      <div id="CaixaCursos" class="caixa">
-        <!-- os cursos irao aparece aqui -->
+      <div id="caixaRemoverCurso" class="caixaFuncionalidades">
+        <button id="btnRemoverCurso">Remover Selecionado</button>
       </div>
-    </main>
-    <script src="aula43.js" class="caixaFunciondalides"></script>
-  </body>
+      <div id="CaixaCursoSelecionado" class="caixaFuncionalidades">
+        <button id="btnCursoSelecionado">Curso selecionado</button>
+      </div>
+    </div>
+    <div id="CaixaCursos" class="caixa">
+      <!-- os cursos irao aparece aqui -->
+    </div>
+  </main>
+  <script src="aula43.js"></script>
+</body>
+
 </html>

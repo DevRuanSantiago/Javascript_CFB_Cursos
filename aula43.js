@@ -1,8 +1,8 @@
-const caixaCursos = document.querySelector("#caixaCursos");
+const caixaCursos = document.querySelector("#CaixaCursos");
 const btn_C = [...document.querySelectorAll(".curso")];
 const c1_2 = document.querySelector("#c1_2");
 const Cursos = ["HTML", "CSS", "JAVA", "PYTHON", "COBOL", "NODE", "ReactNative"]
-const btnCursoSelecionado = document.getElementById("#btnCursoSelecionado");
+const btnCursoSelecionado = document.getElementById("btnCursoSelecionado");
 
 Cursos.map((valor, indice) => {
     const novoelement = document.createElement("div")
@@ -22,4 +22,16 @@ Cursos.map((valor, indice) => {
     novoelement.appendChild(comandos)
     caixaCursos.appendChild(novoelement)
 
+})
+
+btnCursoSelecionado.addEventListener("click", (evt) => {
+    const todosradios = [...document.querySelectorAll("input[type=radio]")]
+    let radioselecionados = todosradios.filter((ele) => {
+        return ele.checked
+    })
+    radioselecionados = radioselecionados[0]
+    const cursoSelecionado = radioselecionados.parentNode.parentNode.firstChild.textContent
+    console.log(todosradios)
+    console.log(radioselecionados)
+    console.log(cursoSelecionado)
 })
