@@ -31,8 +31,8 @@ button {
     align-items: center;
 }
 
-.selecionado {
-    background-color: #800;
+.Selecionado {
+    background-color: rgb(255, 6, 6) !important;
     color: #fcc;
     border-color: #f00;
 }
