@@ -3,7 +3,7 @@ const p_pesquisar = document.getElementById("txt_pesquisar")
 const p_BtnPesquisar = document.getElementById("btnPesquisar")
 const p_resultado = document.getElementById("resultado")
 
-const elementos_array = ["html", "css", "javascript"]
+const elementos_array = [21, 25, 19, 20, 16, 20, 18]
 p_array.innerHTML = "[" + elementos_array + "]"
 
 
